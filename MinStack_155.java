@@ -1,8 +1,9 @@
 import java.util.Stack;
 
 public class MinStack_155 {
-    private Stack<int[]> stack= new Stack<>();
+    private Stack<int[]> stack;
     public MinStack_155() {
+        stack= new Stack<>();
 
     }
 
