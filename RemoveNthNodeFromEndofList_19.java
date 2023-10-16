@@ -14,10 +14,11 @@ public class RemoveNthNodeFromEndofList_19 {
       ListNode left = head;
       ListNode right = head;
 
+      //Move fast in front so that the gap between slow and fast becomes n
       for (int i = 0; i < n; i++) {
         right = right.next;
       }
-
+      //Move fast to the end, maintaining the gap
       while (right != null) {
         left = left.next;
         right = right.next;
