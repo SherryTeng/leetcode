@@ -14,7 +14,7 @@ public class ContainsDuplicateII_219 {
                 if (Math.abs(j-i) <= k) {
                     return true;
                 }else {
-                    map.put(nums[j], j);
+                    map.put(nums[i], i);
                 }
             }
         }
