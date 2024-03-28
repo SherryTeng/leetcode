@@ -29,4 +29,14 @@ public class MaxAreaofIsland_695 {
         area+= up+right+down+left;
         return area;
     }
+
+
+
+    public static void main(String[] args){
+        int[][] grid = new int[][]{{0,0,1,0,0,0,0,1,0,0,0,0,0},{0,0,0,0,0,0,0,1,1,1,0,0,0},{0,1,1,0,1,0,0,0,0,0,0,0,0},{0,1,0,0,1,1,0,0,1,0,1,0,0},{0,1,0,0,1,1,0,0,1,1,1,0,0},{0,0,0,0,0,0,0,0,0,0,1,0,0},{0,0,0,0,0,0,0,1,1,1,0,0,0},{0,0,0,0,0,0,0,1,1,0,0,0,0}};
+        maxAreaOfIsland(grid);
+        System.out.println(maxAreaOfIsland(grid));
+    }
+
+
 }

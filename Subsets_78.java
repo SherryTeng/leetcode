@@ -18,16 +18,16 @@ public class Subsets_78 {
 //        }
 //
 //    }
-    List<List<Integer>> res = new ArrayList<>();
+    static List<List<Integer>> res = new ArrayList<>();
 
-    public List<List<Integer>> subsets(int[] nums) {
+    public static List<List<Integer>> subsets(int[] nums) {
         List<Integer> subset = new ArrayList<>();
         backtrack(nums, 0, subset);
         return res;
 
     }
     //i is the index of the element we are going to visit
-    private void backtrack(int[] nums, int i, List<Integer> subset) {
+    private static void backtrack(int[] nums, int i, List<Integer> subset) {
         //base case:
         if (i >= nums.length) {
             res.add(new ArrayList<>(subset));
@@ -42,5 +42,10 @@ public class Subsets_78 {
         backtrack(nums,i+1, subset);
 
 
+    }
+
+    public static void main(String[] args){
+        int[] nums = new int[]{1,2,3};
+        subsets(nums);
     }
 }

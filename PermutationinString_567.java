@@ -7,6 +7,8 @@ public class PermutationinString_567 {
             count[s1.charAt(i)-'a']++;
         }
 
+
+
         int i = 0;
 
         for (int j = 0; j < s2.length(); j++){
